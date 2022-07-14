@@ -1,11 +1,5 @@
-@import "vars";
-@import "reset";
-
-
-.swiper {
-    width: 600px;
-    height: 300px;
-}
-
-
-@import "media";
+@import "./utils/vars";
+@import "./utils/reset";
+@import "./utils/fonts";
+@import "./utils/mixin";
+@import "./base/base";

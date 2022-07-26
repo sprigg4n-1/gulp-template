@@ -1,17 +1,35 @@
-@mixin for-phone-only {
-    @media (max-width: $phone-sz) {
-      @content;
-    }
+@mixin for-phone-s {
+  @media (max-width: $phone-s) {
+    @content;
   }
-  
-  @mixin for-tablet {
-    @media (min-width: $tablet-sz) {
-      @content;
-    }
+}
+
+@mixin for-phone-m {
+  @media (max-width: $phone-m) {
+    @content;
   }
-  
-  @mixin for-desktop {
-    @media (min-width: $desktop-sz) {
-      @content;
-    }
+}
+
+@mixin for-phone-l {
+  @media (max-width: $phone-l) {
+    @content;
   }
+}
+
+@mixin for-tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin for-laptop {
+  @media (min-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin for-laptop-l {
+  @media (min-width: $laptop-l) {
+    @content;
+  }
+}
